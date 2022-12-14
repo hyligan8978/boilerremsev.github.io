@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+
+body {
+  font-family: Michroma, serif;
+background: linear-gradient(90deg, rgba(13, 46, 88, 0.77) 16%, #BCFBBC 100%);
+}
+
+.nav-link {
+  color: rgb(200, 196, 180);
+}
+
+.navbar-nav .nav-link.active {
+  color: rgb(200, 196, 180);
+}
+
+.navbar-brand img {
+width: 50px;
+}
+
+.navbar-toggler {
+
+  background-color: rgb(219, 217, 240);
+}
+
+.sidebar {
+  color: rgb(58, 101, 212);
+background: linear-gradient(270deg, rgba(13, 46, 88, 0.77) 16%, #BCFBBC 100%);
+}
+
+.card {
+  background: linear-gradient(90deg, rgba(13, 46, 88, 0.77) 16%, #BCFBBC 100%);
+  color: rgb(37, 38, 27);
+}
+/* убрать нижнее подчеркивание на ссылку */
+.card a {
+  text-decoration: none;
+  color: rgb(58, 101, 212);
+}
+
+.slide-text {
+  color: rgb(0, 0, 0);
+  margin-top: 150px;
+}
+
+footer,
+.btn-primary {
+  background: linear-gradient(90deg, rgba(13, 46, 88, 0.77) 16%, #BCFBBC 100%);
+}
+
+/* выравнивание иконок соц сетей по центру  */
+.media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* скопирована анимация из https://webcode.tools/generators/css/keyframe-animation */
+.call-anim {
+  animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+
+/* убрать кнопки под слайдами при уменьшении экрана */
+@media (max-width: 755px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
