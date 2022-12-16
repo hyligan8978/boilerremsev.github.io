@@ -1,1 +1,1 @@
-# sevboiler92.github.io
+# sevboiler92.ru
